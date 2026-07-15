@@ -467,13 +467,12 @@ Thứ tự: Config → DOM Cache → Utilities → Components → Events → Ini
     setButtonLoading(submitButton, true);
 
     try {
-      const response = await fetch(CONFIG.API_URL, {
+      await fetch(CONFIG.API_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain;charset=UTF-8" },
         body: JSON.stringify(payload),
       });
-
-      if (!response.ok) throw new Error(`Request failed with status ${response.status}`);
 
       showToast(MESSAGES.submitSuccess, "success");
       form.reset();
