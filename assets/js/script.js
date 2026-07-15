@@ -448,31 +448,29 @@ Thứ tự: Config → DOM Cache → Utilities → Components → Events → Ini
       return;
     }
 
-    const payload = {
-      hoTen: nameInput.value.trim(),
-      soDienThoai: phoneInput.value.trim(),
-      diaChi: addressInput.value.trim(),
-      combo: comboInputs.filter((input) => input.checked).map((input) => input.value),
-    };
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedCombos = comboInputs
+      .filter((input) => input.checked)
+      .map((input) => input.value);
 
-    const formPayload = new URLSearchParams();
-    formPayload.set("hoTen", payload.hoTen);
-    formPayload.set("soDienThoai", payload.soDienThoai);
-    formPayload.set("diaChi", payload.diaChi);
-    formPayload.set("combo", payload.combo.join(", "));
-    formPayload.set("comboJson", JSON.stringify(payload.combo));
-    formPayload.set("source", "landing-page-sadu");
-    formPayload.set("submittedAt", new Date().toISOString());
+    const payload = {
+      ho_ten: nameInput.value.trim(),
+      so_dien_thoai: phoneInput.value.trim(),
+      dia_chi: addressInput.value.trim(),
+      combo: selectedCombos.join(", "),
+      utm_source: urlParams.get("utm_source") ?? "",
+      utm_medium: urlParams.get("utm_medium") ?? "",
+      utm_campaign: urlParams.get("utm_campaign") ?? "",
+      userAgent: window.navigator.userAgent ?? "",
+    };
 
     setButtonLoading(submitButton, true);
 
     try {
       const response = await fetch(CONFIG.API_URL, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
-        },
-        body: formPayload.toString(),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
       });
 
       if (!response.ok) throw new Error(`Request failed with status ${response.status}`);
