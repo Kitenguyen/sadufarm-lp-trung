@@ -49,7 +49,7 @@ Thứ tự: Config → DOM Cache → Utilities → Components → Events → Ini
   };
 
   const CONFIG = {
-    API_URL: "",
+    API_URL: "https://script.google.com/macros/s/AKfycbygckU9ra0yZZgHmIjOwV2gryBy8oXMKhYJjRQwnUTuUYphAJn92hoWG8_aVDcfvyg_/exec",
     headerScrollThreshold: 10,
     floatingCtaThreshold: 500,
     backToTopThreshold: 700,
@@ -455,13 +455,24 @@ Thứ tự: Config → DOM Cache → Utilities → Components → Events → Ini
       combo: comboInputs.filter((input) => input.checked).map((input) => input.value),
     };
 
+    const formPayload = new URLSearchParams();
+    formPayload.set("hoTen", payload.hoTen);
+    formPayload.set("soDienThoai", payload.soDienThoai);
+    formPayload.set("diaChi", payload.diaChi);
+    formPayload.set("combo", payload.combo.join(", "));
+    formPayload.set("comboJson", JSON.stringify(payload.combo));
+    formPayload.set("source", "landing-page-sadu");
+    formPayload.set("submittedAt", new Date().toISOString());
+
     setButtonLoading(submitButton, true);
 
     try {
       const response = await fetch(CONFIG.API_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+        },
+        body: formPayload.toString(),
       });
 
       if (!response.ok) throw new Error(`Request failed with status ${response.status}`);
