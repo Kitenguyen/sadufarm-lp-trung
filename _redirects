@@ -1,0 +1,7 @@
+# Netlify redirects — SADU Landing Page
+
+# Chuyển www sang non-www (chỉnh lại domain thật trước khi deploy)
+https://www.sadu.vn/*  https://sadu.vn/:splat  301!
+
+# Trang 404 tuỳ chỉnh
+/*  /404.html  404

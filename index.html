@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ====================================================================
+       ANALYTICS & TRACKING — THAY TOÀN BỘ ID DẠNG "XXXXXXX" BẰNG ID THẬT
+       TRƯỚC KHI DEPLOY. Nếu cấu hình GA4/Meta Pixel/TikTok Pixel làm Tag
+       bên trong GTM thì nên gỡ bớt snippet cài trực tiếp tương ứng bên
+       dưới để tránh đếm trùng (double tracking).
+       ==================================================================== -->
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  <!-- End Google Tag Manager -->
+
+  <title>Trứng Gà Thảo Dược SADU - Không kháng sinh, Không tanh, Lòng đỏ cam thơm béo</title>
+  <meta name="description" content="Bữa ăn gia đình bắt đầu từ một quả trứng sạch hơn, rõ nguồn gốc hơn và an tâm hơn mỗi ngày. Trứng Gà Thảo Dược SADU - Không kháng sinh, Không tanh, Lòng đỏ cam thơm béo.">
+  <link rel="canonical" href="https://sadu.vn/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Trứng Gà Thảo Dược SADU - Không kháng sinh, Không tanh, Lòng đỏ cam thơm béo">
+  <meta property="og:description" content="Bữa ăn gia đình bắt đầu từ một quả trứng sạch hơn, rõ nguồn gốc hơn và an tâm hơn mỗi ngày. SADU cam kết 3 không: Không kháng sinh — Không tiêm hormone — Không chất cấm.">
+  <meta property="og:image" content="assets/media/hero-product.png">
+  <meta property="og:url" content="https://sadu.vn/">
+  <meta property="og:locale" content="vi_VN">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Trứng Gà Thảo Dược SADU - Không kháng sinh, Không tanh, Lòng đỏ cam thơm béo">
+  <meta name="twitter:description" content="Bữa ăn gia đình bắt đầu từ một quả trứng sạch hơn, rõ nguồn gốc hơn và an tâm hơn mỗi ngày.">
+  <meta name="twitter:image" content="assets/media/hero-product.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+  <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#2E7D32">
+  <meta name="msapplication-TileColor" content="#2E7D32">
+  <meta name="msapplication-config" content="/browserconfig.xml">
+  <meta name="theme-color" content="#2E7D32">
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "SADU",
+        "url": "https://sadu.vn/",
+        "logo": "https://sadu.vn/assets/media/hero-product.png",
+        "description": "SADU cung cấp Trứng Gà Thảo Dược không kháng sinh, không tiêm hormone, không chất cấm, sản xuất theo hướng sạch và an toàn."
+      },
+      {
+        "@type": "WebSite",
+        "name": "Trứng Gà Thảo Dược SADU",
+        "url": "https://sadu.vn/"
+      },
+      {
+        "@type": "LocalBusiness",
+        "name": "SADU",
+        "url": "https://sadu.vn/",
+        "image": "https://sadu.vn/assets/media/hero-product.png",
+        "description": "SADU cung cấp Trứng Gà Thảo Dược không kháng sinh, không tiêm hormone, không chất cấm, sản xuất theo hướng sạch và an toàn."
+      },
+      {
+        "@type": "Product",
+        "name": "Trứng Gà Thảo Dược SADU",
+        "description": "Trứng Gà Thảo Dược SADU - Không kháng sinh, Không tanh, Lòng đỏ cam thơm béo. Đàn gà được chăm sóc với khẩu phần có thành phần thảo dược.",
+        "image": "https://sadu.vn/assets/media/hero-product.png",
+        "brand": {
+          "@type": "Brand",
+          "name": "SADU"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Trang chủ",
+            "item": "https://sadu.vn/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Trứng Gà Thảo Dược SADU",
+            "item": "https://sadu.vn/#trang-chu"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Trứng SADU có gì khác trứng thường?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SADU là trứng gà thảo dược, được sản xuất theo hướng sạch, có thương hiệu rõ ràng, cam kết không kháng sinh, không tiêm hormone, không chất cấm."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Trứng có tanh không?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Trứng SADU có vị thơm béo, hạn chế mùi tanh, dễ dùng cho trẻ nhỏ và người kén ăn."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Một hộp có bao nhiêu quả?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Một hộp gồm 12 quả."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Mua online trứng có dễ vỡ không?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SADU đóng gói cẩn thận và hỗ trợ kiểm hàng trước khi thanh toán. Nếu trứng nứt/vỡ do vận chuyển, SADU hỗ trợ xử lý theo số lượng lỗi thực tế."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Trứng dùng được cho trẻ nhỏ không?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Có thể chế biến thành nhiều món phù hợp cho trẻ như cháo trứng, trứng hấp, trứng cuộn. Với trẻ có tiền sử dị ứng trứng hoặc trẻ dưới 1 tuổi, nên hỏi thêm chuyên gia dinh dưỡng hoặc bác sĩ."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Meta Pixel -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '0000000000000000');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=0000000000000000&ev=PageView&noscript=1"
+  alt=""/></noscript>
+
+  <!-- TikTok Pixel -->
+  <script>
+  !function (w, d, t) {
+    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=i+"?sdkid="+e+"&lib="+t;var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(a,s)};
+
+    ttq.load('XXXXXXXXXXXXXXXXXXXX');
+    ttq.page();
+  }(window, document, 'ttq');
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xxxxxxxxxx");
+  </script>
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="header__nav" aria-label="Điều hướng chính">
+      <a class="header__logo" href="#trang-chu" aria-label="Trứng Gà Thảo Dược SADU - Về trang chủ">
+        <span class="header__logo-text">SADU FARM</span>
+      </a>
+      <ul class="header__menu" role="list">
+        <li class="header__menu-item"><a class="header__menu-link" href="#trang-chu">Trang chủ</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="#uu-diem">Ưu điểm</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="#combo">Combo</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="#mon-an">Món ăn</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="#feedback">Feedback</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="#faq">FAQ</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="#dat-hang">Đặt hàng</a></li>
+      </ul>
+      <a class="header__cta" href="#dat-hang" role="button" aria-label="Đặt ngay Trứng Gà Thảo Dược SADU" tabindex="0">Đặt ngay</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- SECTION 1: Hero -->
+    <section class="hero" id="trang-chu" aria-labelledby="hero-heading">
+      <div class="hero__content">
+        <h1 class="hero__title" id="hero-heading">Trứng Gà Thảo Dược SADU</h1>
+        <p class="hero__subtitle">Không kháng sinh — Không tanh — Lòng đỏ cam thơm béo</p>
+        <p class="hero__text">Bữa ăn gia đình bắt đầu từ một quả trứng sạch hơn, rõ nguồn gốc hơn và an tâm hơn mỗi ngày.</p>
+
+        <div class="hero__usp" role="note" aria-label="Cam kết SADU">
+          <p class="hero__usp-title">SADU cam kết 3 không:</p>
+          <p class="hero__usp-text">Không kháng sinh — Không tiêm hormone — Không chất cấm</p>
+        </div>
+
+        <div class="hero__offer" aria-label="Ưu đãi hôm nay">
+          <p class="hero__offer-title">Ưu đãi hôm nay</p>
+          <ul class="hero__offer-list" role="list">
+            <li class="hero__offer-item">Mua 3 hộp tặng 1 hộp</li>
+            <li class="hero__offer-item">Mua 6 hộp tặng 2 hộp + tặng trà Cà Gai Leo Tía Tô 100g</li>
+          </ul>
+        </div>
+
+        <div class="hero__actions">
+          <a class="hero__button hero__button--primary" href="#dat-hang" role="button" aria-label="Đặt trứng SADU ngay" tabindex="0">Đặt Trứng SADU Ngay</a>
+          <a class="hero__button hero__button--secondary" href="https://zalo.me/0974966690" role="button" aria-label="Chat Zalo để được tư vấn" tabindex="0" target="_blank" rel="noopener noreferrer">Chat Zalo Nhận Ưu Đãi</a>
+        </div>
+
+        <p class="hero__note">Kiểm hàng trước khi thanh toán. Trứng nứt/vỡ do vận chuyển được hỗ trợ xử lý theo số lượng lỗi thực tế.</p>
+      </div>
+
+      <div class="hero__image">
+        <!-- ================================= -->
+        <!-- TODO -->
+        <!-- Replace with real SADU image -->
+        <!-- Recommended size 600x600 -->
+        <!-- ================================= -->
+        <img src="assets/media/hero-product.png" alt="Trứng gà thảo dược SADU đóng hộp" width="600" height="600" loading="eager" fetchpriority="high" decoding="async">
+      </div>
+    </section>
+
+    <!-- SECTION 2: Trust Bar -->
+    <section class="trust-bar" id="trust-bar" aria-labelledby="trust-bar-heading">
+      <h2 class="trust-bar__heading" id="trust-bar-heading">Cam kết từ SADU</h2>
+      <ul class="trust-bar__list" role="list">
+        <li class="trust-bar__item">
+          <span class="trust-bar__icon" aria-hidden="true">✓</span>
+          <span class="trust-bar__text">Không kháng sinh</span>
+        </li>
+        <li class="trust-bar__item">
+          <span class="trust-bar__icon" aria-hidden="true">✓</span>
+          <span class="trust-bar__text">Không tiêm hormone</span>
+        </li>
+        <li class="trust-bar__item">
+          <span class="trust-bar__icon" aria-hidden="true">✓</span>
+          <span class="trust-bar__text">Không chất cấm</span>
+        </li>
+        <li class="trust-bar__item">
+          <span class="trust-bar__icon" aria-hidden="true">✓</span>
+          <span class="trust-bar__text">Kiểm hàng trước khi thanh toán</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- SECTION 3: Form đặt hàng -->
+    <section class="order-form" id="dat-hang" aria-labelledby="order-form-heading">
+      <div class="order-form__wrapper">
+        <h2 class="order-form__heading" id="order-form-heading">Nhận ưu đãi Trứng Gà Thảo Dược SADU hôm nay</h2>
+        <p class="order-form__text">Điền thông tin, SADU sẽ liên hệ xác nhận đơn và tư vấn combo phù hợp cho gia đình bạn.</p>
+
+        <form class="order-form__form" action="#" method="post" aria-labelledby="order-form-heading">
+          <div class="order-form__group">
+            <label class="order-form__label" for="ho-ten">Họ và tên</label>
+            <input class="order-form__input" type="text" id="ho-ten" name="ho_ten" placeholder="Nhập họ tên" autocomplete="name" required>
+          </div>
+
+          <div class="order-form__group">
+            <label class="order-form__label" for="so-dien-thoai">Số điện thoại</label>
+            <input class="order-form__input" type="tel" id="so-dien-thoai" name="so_dien_thoai" placeholder="Nhập số điện thoại" autocomplete="tel" required>
+          </div>
+
+          <fieldset class="order-form__fieldset">
+            <legend class="order-form__legend">Chọn combo</legend>
+            <div class="order-form__checkbox-group">
+              <input class="order-form__checkbox" type="checkbox" id="combo-dung-thu" name="combo" value="1-hop-dung-thu">
+              <label class="order-form__checkbox-label" for="combo-dung-thu">1 hộp dùng thử</label>
+            </div>
+            <div class="order-form__checkbox-group">
+              <input class="order-form__checkbox" type="checkbox" id="combo-3-tang-1" name="combo" value="combo-3-tang-1">
+              <label class="order-form__checkbox-label" for="combo-3-tang-1">Combo 3 hộp tặng 1 hộp</label>
+            </div>
+            <div class="order-form__checkbox-group">
+              <input class="order-form__checkbox" type="checkbox" id="combo-6-tang-2" name="combo" value="combo-6-tang-2-tang-tra">
+              <label class="order-form__checkbox-label" for="combo-6-tang-2">Combo 6 hộp tặng 2 hộp + tặng trà</label>
+            </div>
+            <div class="order-form__checkbox-group">
+              <input class="order-form__checkbox" type="checkbox" id="combo-tu-van" name="combo" value="can-tu-van-them">
+              <label class="order-form__checkbox-label" for="combo-tu-van">Cần tư vấn thêm</label>
+            </div>
+          </fieldset>
+
+          <div class="order-form__group">
+            <label class="order-form__label" for="dia-chi">Địa chỉ nhận hàng</label>
+            <input class="order-form__input" type="text" id="dia-chi" name="dia_chi" placeholder="Nhập địa chỉ giao hàng" autocomplete="street-address" required>
+          </div>
+
+          <button class="order-form__submit" type="submit" aria-label="Gửi thông tin nhận ưu đãi ngay">Gửi Thông Tin — Nhận Ưu Đãi Ngay</button>
+        </form>
+
+        <p class="order-form__note">Không hài lòng về tình trạng hàng khi nhận? SADU hỗ trợ đổi mới, trừ tiền hoặc gửi bù theo chính sách thực tế.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Pain Point -->
+    <section class="pain-point" id="noi-lo-khach-hang" aria-labelledby="pain-point-heading">
+      <h2 class="pain-point__heading" id="pain-point-heading">Bạn có đang lo khi mua trứng cho gia đình?</h2>
+      <p class="pain-point__intro">Trứng là món ăn quen thuộc, nhưng nhiều mẹ vẫn băn khoăn:</p>
+      <ul class="pain-point__list" role="list">
+        <li class="pain-point__item">Trứng ngoài chợ có rõ nguồn gốc không?</li>
+        <li class="pain-point__item">Có tồn dư kháng sinh hay chất cấm không?</li>
+        <li class="pain-point__item">Trứng có tanh khiến bé không chịu ăn không?</li>
+        <li class="pain-point__item">Mua online có sợ trứng nứt, vỡ khi giao hàng không?</li>
+      </ul>
+      <p class="pain-point__conclusion">Với thực phẩm dùng hằng ngày, ngon thôi chưa đủ. Điều quan trọng hơn là sạch, rõ nguồn gốc và tạo cảm giác an tâm khi dùng cho cả gia đình.</p>
+      <a class="pain-point__cta" href="#dat-hang" role="button" aria-label="Tôi muốn dùng thử SADU" tabindex="0">Tôi Muốn Dùng Thử SADU</a>
+    </section>
+
+    <!-- SECTION 5: Giải pháp SADU -->
+    <section class="solution" id="giai-phap" aria-labelledby="solution-heading">
+      <div class="solution__content">
+        <h2 class="solution__heading" id="solution-heading">Trứng Gà Thảo Dược SADU — Sạch ngon hơn cho bữa ăn gia đình</h2>
+        <p class="solution__text">Trứng Gà Thảo Dược SADU là dòng trứng gà chất lượng cao, được sản xuất theo hướng sạch, an toàn và rõ nguồn gốc.</p>
+        <p class="solution__text">Đàn gà được chăm sóc với khẩu phần có thành phần thảo dược, tạo nên quả trứng có hương vị thơm béo, lòng đỏ cam đẹp mắt, hạn chế mùi tanh và dễ chế biến thành nhiều món ngon.</p>
+
+        <p class="solution__list-title">Phù hợp cho:</p>
+        <ul class="solution__list" role="list">
+          <li class="solution__item">Gia đình có trẻ nhỏ</li>
+          <li class="solution__item">Mẹ bầu</li>
+          <li class="solution__item">Người lớn tuổi</li>
+          <li class="solution__item">Người ăn healthy</li>
+          <li class="solution__item">Gia đình quan tâm thực phẩm sạch</li>
+          <li class="solution__item">Người bận rộn cần bữa sáng nhanh gọn</li>
+        </ul>
+      </div>
+
+      <div class="solution__image">
+        <!-- ================================= -->
+        <!-- TODO -->
+        <!-- Replace with real SADU image -->
+        <!-- Recommended size 600x450 -->
+        <!-- ================================= -->
+        <img src="assets/media/solution-product.jpg" alt="Sản phẩm trứng gà thảo dược SADU và khay trứng" width="600" height="450" loading="lazy" decoding="async">
+      </div>
+    </section>
+
+    <!-- SECTION 6: USP -->
+    <section class="usp" id="uu-diem" aria-labelledby="usp-heading">
+      <h2 class="usp__heading" id="usp-heading">Vì sao nên chọn Trứng Gà Thảo Dược SADU?</h2>
+      <div class="usp__grid">
+        <article class="usp__card">
+          <h3 class="usp__card-title">1. Không kháng sinh</h3>
+          <p class="usp__card-text">Giúp người dùng yên tâm hơn khi chọn trứng cho bữa ăn hằng ngày.</p>
+        </article>
+        <article class="usp__card">
+          <h3 class="usp__card-title">2. Không hormone, không chất cấm</h3>
+          <p class="usp__card-text">Phù hợp với xu hướng ăn sạch, sống khỏe và chăm sóc gia đình bằng thực phẩm rõ nguồn gốc.</p>
+        </article>
+        <article class="usp__card">
+          <h3 class="usp__card-title">3. Gà ăn thảo dược</h3>
+          <p class="usp__card-text">Tạo nên điểm khác biệt của SADU so với trứng thông thường.</p>
+        </article>
+        <article class="usp__card">
+          <h3 class="usp__card-title">4. Thơm béo, không tanh</h3>
+          <p class="usp__card-text">Dễ ăn hơn, đặc biệt phù hợp với trẻ nhỏ hoặc người kén mùi trứng.</p>
+        </article>
+        <article class="usp__card">
+          <h3 class="usp__card-title">5. Lòng đỏ cam đẹp mắt</h3>
+          <p class="usp__card-text">Giúp món ăn hấp dẫn hơn khi chế biến: trứng luộc, cháo trứng, trứng hấp, trứng cuộn, cơm chiên trứng.</p>
+        </article>
+        <article class="usp__card">
+          <h3 class="usp__card-title">6. Kiểm hàng trước khi thanh toán</h3>
+          <p class="usp__card-text">Khách được kiểm tra hàng khi nhận. Nếu trứng nứt/vỡ do vận chuyển, SADU hỗ trợ xử lý theo số lượng lỗi thực tế.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 7: Bảng so sánh -->
+    <section class="comparison" id="so-sanh" aria-labelledby="comparison-heading">
+      <h2 class="comparison__heading" id="comparison-heading">SADU khác gì trứng thường?</h2>
+      <div class="comparison__table-wrapper" tabindex="0" role="region" aria-labelledby="comparison-heading">
+        <table class="comparison__table">
+          <caption class="comparison__caption">Bảng so sánh Trứng Gà Thảo Dược SADU và trứng thường</caption>
+          <thead>
+            <tr>
+              <th class="comparison__header" scope="col">Tiêu chí</th>
+              <th class="comparison__header" scope="col">Trứng thường khó kiểm soát</th>
+              <th class="comparison__header" scope="col">Trứng Gà Thảo Dược SADU</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="comparison__row-header" scope="row">Nguồn gốc</th>
+              <td class="comparison__cell">Khó biết rõ</td>
+              <td class="comparison__cell">Có thương hiệu, thông tin rõ ràng</td>
+            </tr>
+            <tr>
+              <th class="comparison__row-header" scope="row">Khẩu phần gà</th>
+              <td class="comparison__cell">Không rõ</td>
+              <td class="comparison__cell">Có thành phần thảo dược</td>
+            </tr>
+            <tr>
+              <th class="comparison__row-header" scope="row">Cam kết an toàn</th>
+              <td class="comparison__cell">Không đồng nhất</td>
+              <td class="comparison__cell">3 không: không kháng sinh, không hormone, không chất cấm</td>
+            </tr>
+            <tr>
+              <th class="comparison__row-header" scope="row">Mùi vị</th>
+              <td class="comparison__cell">Có thể tanh</td>
+              <td class="comparison__cell">Thơm béo, hạn chế mùi tanh</td>
+            </tr>
+            <tr>
+              <th class="comparison__row-header" scope="row">Lòng đỏ</th>
+              <td class="comparison__cell">Màu sắc không đồng đều</td>
+              <td class="comparison__cell">Lòng đỏ cam, đẹp mắt</td>
+            </tr>
+            <tr>
+              <th class="comparison__row-header" scope="row">Mua online</th>
+              <td class="comparison__cell">Sợ nứt/vỡ</td>
+              <td class="comparison__cell">Được kiểm hàng, hỗ trợ lỗi vận chuyển</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <a class="comparison__cta" href="#dat-hang" role="button" aria-label="Chọn SADU cho gia đình tôi" tabindex="0">Chọn SADU Cho Gia Đình Tôi</a>
+    </section>
+
+    <!-- SECTION 8: Combo -->
+    <section class="combo" id="combo" aria-labelledby="combo-heading">
+      <h2 class="combo__heading" id="combo-heading">Chọn combo phù hợp cho gia đình bạn</h2>
+      <div class="combo__grid">
+        <article class="combo__card">
+          <h3 class="combo__card-title">Gói dùng thử</h3>
+          <!-- ================================= -->
+          <!-- TODO -->
+          <!-- Replace with real SADU image -->
+          <!-- Recommended size 300x300 -->
+          <!-- ================================= -->
+          <img class="combo__card-image" src="assets/media/combo-trial.jpg" alt="Khay trứng SADU gói dùng thử" width="300" height="300" loading="lazy" decoding="async">
+          <p class="combo__card-desc">1 hộp Trứng Gà Thảo Dược SADU</p>
+          <p class="combo__card-note">Phù hợp cho khách mới muốn trải nghiệm.</p>
+          <a class="combo__card-cta" href="#dat-hang" role="button" aria-label="Đặt 1 hộp dùng thử" tabindex="0">Đặt 1 Hộp Dùng Thử</a>
+        </article>
+        <article class="combo__card">
+          <h3 class="combo__card-title">Gói tiết kiệm</h3>
+          <!-- ================================= -->
+          <!-- TODO -->
+          <!-- Replace with real SADU image -->
+          <!-- Recommended size 300x300 -->
+          <!-- ================================= -->
+          <img class="combo__card-image" src="assets/media/combo-save.png" alt="Combo trứng gà thảo dược SADU tiết kiệm" width="300" height="300" loading="lazy" decoding="async">
+          <p class="combo__card-desc">Mua 3 hộp tặng 1 hộp</p>
+          <p class="combo__card-note">Phù hợp cho gia đình dùng trứng thường xuyên trong tuần.</p>
+          <a class="combo__card-cta" href="#dat-hang" role="button" aria-label="Chọn combo 3 tặng 1" tabindex="0">Chọn Combo 3 Tặng 1</a>
+        </article>
+        <article class="combo__card">
+          <h3 class="combo__card-title">Gói bán chạy</h3>
+          <!-- ================================= -->
+          <!-- TODO -->
+          <!-- Replace with real SADU image -->
+          <!-- Recommended size 300x300 -->
+          <!-- ================================= -->
+          <img class="combo__card-image" src="assets/media/combo-bestseller.png" alt="Túi quà trứng gà thảo dược SADU bán chạy" width="300" height="300" loading="lazy" decoding="async">
+          <p class="combo__card-desc">Mua 6 hộp tặng 2 hộp + tặng trà Cà Gai Leo Tía Tô 100g</p>
+          <p class="combo__card-note">Phù hợp cho gia đình đông người, mua chung hoặc làm quà biếu.</p>
+          <a class="combo__card-cta" href="#dat-hang" role="button" aria-label="Nhận ưu đãi 6 tặng 2" tabindex="0">Nhận Ưu Đãi 6 Tặng 2</a>
+        </article>
+      </div>
+      <p class="combo__note">Ưu đãi áp dụng theo từng đợt giao hàng. Đặt sớm để được giữ combo tốt nhất hôm nay.</p>
+    </section>
+
+    <!-- SECTION 9: Món ăn -->
+    <section class="dishes" id="mon-an" aria-labelledby="dishes-heading">
+      <h2 class="dishes__heading" id="dishes-heading">Một hộp trứng — nhiều bữa ăn ngon cho cả nhà</h2>
+      <ul class="dishes__grid" role="list">
+        <li class="dishes__item">
+          <!-- ================================= -->
+          <!-- TODO -->
+          <!-- Replace with real SADU image -->
+          <!-- Recommended size 260x200 -->
+          <!-- ================================= -->
+          <img class="dishes__image" src="assets/media/dish-soft-boiled.jpg" alt="Trứng luộc lòng đào SADU" width="260" height="200" loading="lazy" decoding="async">
+          <span class="dishes__name">Cháo trứng cà rốt cho bé</span>
+        </li>
+        <li class="dishes__item">
+          <!-- ================================= -->
+          <!-- TODO -->
+          <!-- Replace with real SADU image -->
+          <!-- Recommended size 260x200 -->
+          <!-- ================================= -->
+          <img class="dishes__image" src="assets/media/dish-boiled-halves.jpg" alt="Trứng luộc bổ đôi lòng đỏ cam" width="260" height="200" loading="lazy" decoding="async">
+          <span class="dishes__name">Trứng hấp sữa mềm mịn</span>
+        </li>
+        <li class="dishes__item">
+          <!-- ================================= -->
+          <!-- TODO -->
+          <!-- Replace with real SADU image -->
+          <!-- Recommended size 260x200 -->
+          <!-- ================================= -->
+          <img class="dishes__image" src="assets/media/dish-yolk-platter.jpg" alt="Đĩa trứng luộc trình bày đẹp mắt" width="260" height="200" loading="lazy" decoding="async">
+          <span class="dishes__name">Trứng cuộn rau củ phô mai</span>
+        </li>
+        <li class="dishes__item">
+          <!-- ================================= -->
+          <!-- TODO -->
+          <!-- Replace with real SADU image -->
+          <!-- Recommended size 260x200 -->
+          <!-- ================================= -->
+          <img class="dishes__image" src="assets/media/experience-young-customer.jpg" alt="Khách hàng trẻ trải nghiệm trứng SADU tại nhà" width="260" height="200" loading="lazy" decoding="async">
+          <span class="dishes__name">Cơm chiên trứng rau củ</span>
+        </li>
+        <li class="dishes__item">
+          <!-- ================================= -->
+          <!-- TODO -->
+          <!-- Replace with real SADU image -->
+          <!-- Recommended size 260x200 -->
+          <!-- ================================= -->
+          <img class="dishes__image" src="assets/media/experience-family.jpg" alt="Gia đình chuẩn bị bữa ăn cùng trứng SADU" width="260" height="200" loading="lazy" decoding="async">
+          <span class="dishes__name">Canh trứng đậu phụ non</span>
+        </li>
+        <li class="dishes__item">
+          <!-- ================================= -->
+          <!-- TODO -->
+          <!-- Replace with real SADU image -->
+          <!-- Recommended size 260x200 -->
+          <!-- ================================= -->
+          <img class="dishes__image" src="assets/media/combo-trial.jpg" alt="Trứng SADU phù hợp cho bữa ăn healthy" width="260" height="200" loading="lazy" decoding="async">
+          <span class="dishes__name">Salad trứng cho người ăn healthy</span>
+        </li>
+        <li class="dishes__item">
+          <!-- ================================= -->
+          <!-- TODO -->
+          <!-- Replace with real SADU image -->
+          <!-- Recommended size 260x200 -->
+          <!-- ================================= -->
+          <img class="dishes__image" src="assets/media/hero-product.png" alt="Lòng đỏ cam đẹp mắt của trứng SADU" width="260" height="200" loading="lazy" decoding="async">
+          <span class="dishes__name">Trứng luộc cho bữa sáng nhanh gọn</span>
+        </li>
+        <li class="dishes__item">
+          <!-- ================================= -->
+          <!-- TODO -->
+          <!-- Replace with real SADU image -->
+          <!-- Recommended size 260x200 -->
+          <!-- ================================= -->
+          <img class="dishes__image" src="assets/media/combo-bestseller.png" alt="SADU phù hợp làm quà biếu và bữa sáng gia đình" width="260" height="200" loading="lazy" decoding="async">
+          <span class="dishes__name">Pancake trứng chuối sữa cho bé</span>
+        </li>
+      </ul>
+      <a class="dishes__cta" href="#dat-hang" role="button" aria-label="Đặt SADU cho bữa sáng ngày mai" tabindex="0">Đặt SADU Cho Bữa Sáng Ngày Mai</a>
+    </section>
+
+    <!-- SECTION 10: Cam kết -->
+    <section class="commitment" id="cam-ket" aria-labelledby="commitment-heading">
+      <h2 class="commitment__heading" id="commitment-heading">Mua Trứng Gà Thảo Dược SADU — An tâm từ lúc đặt đến lúc nhận</h2>
+      <p class="commitment__intro">SADU cam kết:</p>
+      <ul class="commitment__list" role="list">
+        <li class="commitment__item">Hàng chính hãng SADU</li>
+        <li class="commitment__item">Đóng gói cẩn thận</li>
+        <li class="commitment__item">Kiểm hàng trước khi thanh toán</li>
+        <li class="commitment__item">Hỗ trợ xử lý nếu trứng nứt/vỡ do vận chuyển</li>
+        <li class="commitment__item">Tư vấn combo phù hợp theo nhu cầu gia đình</li>
+      </ul>
+      <p class="commitment__note">Nếu phát hiện trứng bị nứt/vỡ khi nhận hàng, khách hàng có thể phản hồi ngay để được hỗ trợ trừ tiền, đổi mới hoặc gửi bù theo số lượng lỗi thực tế.</p>
+      <a class="commitment__cta" href="#dat-hang" role="button" aria-label="Đặt hàng ngay, kiểm hàng trước khi thanh toán" tabindex="0">Đặt Hàng Ngay — Kiểm Hàng Trước Khi Thanh Toán</a>
+    </section>
+
+    <!-- SECTION 11: Feedback -->
+    <section class="feedback" id="feedback" aria-labelledby="feedback-heading">
+      <h2 class="feedback__heading" id="feedback-heading">Khách hàng nói gì về SADU?</h2>
+      <div class="feedback__grid">
+        <article class="feedback__card">
+          <!-- ================================= -->
+          <!-- TODO -->
+          <!-- Replace with real SADU image -->
+          <!-- Recommended size 280x280 -->
+          <!-- ================================= -->
+          <img class="feedback__image" src="assets/media/feedback-chat-quality.jpg" alt="Feedback khách hàng về chất lượng trứng SADU" width="280" height="280" loading="lazy" decoding="async">
+          <blockquote class="feedback__quote">
+            <p>“Trứng thơm, lòng đỏ đẹp, bé nhà mình dễ ăn hơn.”</p>
+          </blockquote>
+        </article>
+        <article class="feedback__card">
+          <!-- ================================= -->
+          <!-- TODO -->
+          <!-- Replace with real SADU image -->
+          <!-- Recommended size 280x280 -->
+          <!-- ================================= -->
+          <img class="feedback__image" src="assets/media/feedback-chat-yolk.jpg" alt="Feedback khách hàng về lòng đỏ cam và vị ngon" width="280" height="280" loading="lazy" decoding="async">
+          <blockquote class="feedback__quote">
+            <p>“Luộc lên không tanh, lòng đỏ béo, ăn rất khác trứng thường.”</p>
+          </blockquote>
+        </article>
+        <article class="feedback__card">
+          <!-- ================================= -->
+          <!-- TODO -->
+          <!-- Replace with real SADU image -->
+          <!-- Recommended size 280x280 -->
+          <!-- ================================= -->
+          <img class="feedback__image" src="assets/media/feedback-chat-shipping.jpg" alt="Feedback khách hàng về đóng gói và giao hàng an tâm" width="280" height="280" loading="lazy" decoding="async">
+          <blockquote class="feedback__quote">
+            <p>“Mua online nhưng được kiểm hàng, trứng nứt được hỗ trợ nên mình yên tâm.”</p>
+          </blockquote>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 12: FAQ -->
+    <section class="faq" id="faq" aria-labelledby="faq-heading">
+      <h2 class="faq__heading" id="faq-heading">Câu hỏi thường gặp</h2>
+      <div class="faq__list">
+        <article class="faq__item">
+          <details class="faq__details">
+            <summary class="faq__question" id="faq-q1">Trứng SADU có gì khác trứng thường?</summary>
+            <p class="faq__answer" aria-labelledby="faq-q1">SADU là trứng gà thảo dược, được sản xuất theo hướng sạch, có thương hiệu rõ ràng, cam kết không kháng sinh, không tiêm hormone, không chất cấm.</p>
+          </details>
+        </article>
+        <article class="faq__item">
+          <details class="faq__details">
+            <summary class="faq__question" id="faq-q2">Trứng có tanh không?</summary>
+            <p class="faq__answer" aria-labelledby="faq-q2">Trứng SADU có vị thơm béo, hạn chế mùi tanh, dễ dùng cho trẻ nhỏ và người kén ăn.</p>
+          </details>
+        </article>
+        <article class="faq__item">
+          <details class="faq__details">
+            <summary class="faq__question" id="faq-q3">Một hộp có bao nhiêu quả?</summary>
+            <p class="faq__answer" aria-labelledby="faq-q3">Một hộp gồm 12 quả.</p>
+          </details>
+        </article>
+        <article class="faq__item">
+          <details class="faq__details">
+            <summary class="faq__question" id="faq-q4">Mua online trứng có dễ vỡ không?</summary>
+            <p class="faq__answer" aria-labelledby="faq-q4">SADU đóng gói cẩn thận và hỗ trợ kiểm hàng trước khi thanh toán. Nếu trứng nứt/vỡ do vận chuyển, SADU hỗ trợ xử lý theo số lượng lỗi thực tế.</p>
+          </details>
+        </article>
+        <article class="faq__item">
+          <details class="faq__details">
+            <summary class="faq__question" id="faq-q5">Trứng dùng được cho trẻ nhỏ không?</summary>
+            <p class="faq__answer" aria-labelledby="faq-q5">Có thể chế biến thành nhiều món phù hợp cho trẻ như cháo trứng, trứng hấp, trứng cuộn. Với trẻ có tiền sử dị ứng trứng hoặc trẻ dưới 1 tuổi, nên hỏi thêm chuyên gia dinh dưỡng hoặc bác sĩ.</p>
+          </details>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 13: CTA cuối trang -->
+    <section class="final-cta" id="cta-cuoi-trang" aria-labelledby="final-cta-heading">
+      <h2 class="final-cta__heading" id="final-cta-heading">Đừng để bữa ăn gia đình chỉ "ăn cho xong"</h2>
+      <p class="final-cta__text">Hãy bắt đầu từ một quả trứng sạch hơn, thơm ngon hơn và an tâm hơn mỗi ngày.</p>
+      <p class="final-cta__text">Trứng Gà Thảo Dược SADU phù hợp cho bữa sáng, bữa cơm gia đình, món ăn cho bé và thực đơn healthy hằng ngày.</p>
+
+      <div class="final-cta__offer" aria-label="Ưu đãi đang có">
+        <p class="final-cta__offer-title">Ưu đãi đang có:</p>
+        <ul class="final-cta__offer-list" role="list">
+          <li class="final-cta__offer-item">Mua 3 hộp tặng 1 hộp</li>
+          <li class="final-cta__offer-item">Mua 6 hộp tặng 2 hộp + tặng trà Cà Gai Leo Tía Tô 100g</li>
+        </ul>
+      </div>
+
+      <div class="final-cta__actions">
+        <a class="final-cta__button final-cta__button--primary" href="#dat-hang" role="button" aria-label="Đặt trứng SADU ngay" tabindex="0">Đặt Trứng SADU Ngay</a>
+        <a class="final-cta__button final-cta__button--secondary" href="https://zalo.me/0974966690" role="button" aria-label="Chat Zalo để được tư vấn" tabindex="0" target="_blank" rel="noopener noreferrer">Chat Zalo Nhận Ưu Đãi</a>
+      </div>
+
+      <p class="final-cta__note">Kiểm hàng trước khi thanh toán — lỗi nứt/vỡ được hỗ trợ xử lý theo chính sách thực tế.</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="footer__logo-text">SADU FARM</span>
+        <p class="footer__desc">Trứng Gà Thảo Dược SADU</p>
+      </div>
+
+      <div class="footer__info">
+        <h2 class="footer__info-heading">Thông tin công ty</h2>
+        <p class="footer__item">Công ty: [Đang cập nhật]</p>
+        <p class="footer__item">Hotline: <a class="footer__link" href="tel:0974966690" aria-label="Gọi hotline SADU">0974 966 690</a></p>
+        <p class="footer__item">Địa chỉ: [Đang cập nhật]</p>
+      </div>
+
+      <div class="footer__social">
+        <h2 class="footer__social-heading">Kết nối với SADU</h2>
+        <ul class="footer__social-list" role="list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.facebook.com/trunggasadu.official" aria-label="Facebook SADU" tabindex="0" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://zalo.me/0974966690" aria-label="Zalo SADU" tabindex="0" target="_blank" rel="noopener noreferrer">Zalo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">© 2026 SADU. Bảo lưu mọi quyền.</p>
+    </div>
+  </footer>
+
+  <!-- Floating CTA -->
+  <aside class="floating-cta" role="region" aria-label="Thanh hành động nhanh">
+    <p class="floating-cta__note">Ưu đãi combo hôm nay — Kiểm hàng trước khi thanh toán</p>
+    <div class="floating-cta__actions">
+      <a class="floating-cta__button floating-cta__button--call" href="tel:0974966690" role="button" aria-label="Gọi ngay cho SADU" tabindex="0">Gọi 0974 966 690</a>
+      <a class="floating-cta__button floating-cta__button--zalo" href="https://zalo.me/0974966690" role="button" aria-label="Chat Zalo với SADU" tabindex="0" target="_blank" rel="noopener noreferrer">Chat Zalo</a>
+      <a class="floating-cta__button floating-cta__button--order" href="#dat-hang" role="button" aria-label="Đặt hàng Trứng Gà Thảo Dược SADU" tabindex="0">Đặt Hàng</a>
+    </div>
+  </aside>
+
+  <script src="assets/js/script.js" defer></script>
+  <script src="assets/js/tracking.js" defer></script>
+</body>
+</html>
