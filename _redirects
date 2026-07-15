@@ -1,7 +1,5 @@
-# Netlify redirects — SADU Landing Page
-
-# Chuyển www sang non-www (chỉnh lại domain thật trước khi deploy)
-https://www.sadu.vn/*  https://sadu.vn/:splat  301!
-
-# Trang 404 tuỳ chỉnh
-/*  /404.html  404
+# Cloudflare-compatible redirects
+#
+# Keep this file empty for now.
+# - Custom 404 is served automatically from /404.html
+# - www -> non-www should be configured as a Cloudflare Redirect Rule

@@ -10,6 +10,9 @@
 /assets/js/script.js
   Cache-Control: public, max-age=2592000, immutable
 
+/assets/media/*
+  Cache-Control: public, max-age=15552000, immutable
+
 /assets/images/*
   Cache-Control: public, max-age=15552000, immutable
 
