@@ -195,13 +195,13 @@ main > section {
 .feedback__heading,
 .faq__heading,
 .final-cta__heading {
-  max-width: 15ch;
+  max-width: 38ch;
   margin-inline: auto;
   margin-bottom: 16px;
   font-family: var(--font-family-display);
   color: #36402a;
-  font-size: clamp(1.9rem, 2.65vw, 2.9rem);
-  line-height: 1.04;
+  font-size: clamp(1.65rem, 2vw, 2.35rem);
+  line-height: 1.12;
   letter-spacing: -0.03em;
   text-align: center;
   text-wrap: balance;
@@ -430,11 +430,11 @@ main > section {
 }
 
 .hero__title {
-  max-width: 9ch;
+  max-width: 24ch;
   font-family: var(--font-family-display);
-  font-size: clamp(4rem, 7vw, 7rem);
-  line-height: 0.9;
-  letter-spacing: -0.06em;
+  font-size: clamp(2.5rem, 4.2vw, 4.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
   text-wrap: balance;
 }
 
@@ -570,24 +570,12 @@ main > section {
   position: absolute;
   inset: 6% 2% 0;
   border-radius: 44px;
-  background:
-    radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.92), transparent 32%),
-    radial-gradient(circle at 84% 22%, rgba(221, 230, 199, 0.9), transparent 24%),
-    linear-gradient(180deg, #fcfbef 0%, #f5f5e8 100%);
+  background: linear-gradient(180deg, #fcfbef 0%, #f5f5e8 100%);
   box-shadow: var(--shadow-md);
 }
 
 .hero__image::after {
-  content: "";
-  position: absolute;
-  left: 8%;
-  bottom: 6%;
-  width: clamp(88px, 10vw, 140px);
-  height: clamp(88px, 10vw, 140px);
-  border: 1px solid var(--color-border);
-  border-radius: 42% 58% 44% 56%;
-  background: rgba(255, 255, 255, 0.34);
-  backdrop-filter: blur(10px);
+  content: none;
 }
 
 .hero__image img {
@@ -668,8 +656,8 @@ main > section {
 }
 
 .order-form__heading {
-  max-width: 10.5ch;
-  font-size: clamp(2rem, 2.8vw, 2.85rem);
+  max-width: 30ch;
+  font-size: clamp(1.8rem, 2.2vw, 2.45rem);
 }
 
 .order-form__text,
@@ -778,7 +766,7 @@ main > section {
 }
 
 .pain-point__heading {
-  max-width: 12ch;
+  max-width: 28ch;
 }
 
 .pain-point__intro,
@@ -847,7 +835,7 @@ main > section {
 }
 
 .solution__heading {
-  max-width: 9.5ch;
+  max-width: 28ch;
   margin-inline: 0;
   text-align: left;
 }
@@ -1317,7 +1305,7 @@ main > section {
 }
 
 .final-cta__heading {
-  max-width: 12ch;
+  max-width: 34ch;
   color: var(--color-white);
 }
 
@@ -1326,12 +1314,12 @@ main > section {
 .combo__heading,
 .feedback__heading,
 .faq__heading {
-  max-width: 13ch;
+  max-width: 34ch;
 }
 
 .dishes__heading,
 .commitment__heading {
-  max-width: 11.5ch;
+  max-width: 32ch;
 }
 
 .final-cta__text,
@@ -1688,13 +1676,14 @@ main > section.is-visible,
   .feedback__heading,
   .faq__heading,
   .final-cta__heading {
-    max-width: 12ch;
-    font-size: clamp(1.65rem, 5.6vw, 2.2rem);
+    max-width: 28ch;
+    font-size: clamp(1.45rem, 3.6vw, 1.85rem);
     line-height: 1.06;
   }
 
   .hero__title {
-    font-size: clamp(3rem, 13vw, 4.4rem);
+    max-width: 18ch;
+    font-size: clamp(2.2rem, 6vw, 3.1rem);
   }
 
   .hero {
@@ -1932,8 +1921,8 @@ main > section.is-visible,
   .feedback__heading,
   .faq__heading,
   .final-cta__heading {
-    max-width: 11ch;
-    font-size: clamp(1.55rem, 7vw, 2rem);
+    max-width: 20ch;
+    font-size: clamp(1.35rem, 5vw, 1.65rem);
   }
 
   .hero__title {
