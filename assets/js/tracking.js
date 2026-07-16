@@ -29,12 +29,20 @@ Thứ tự: Config → Utilities → Components → Events → Initialization
     utmKeys: ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"],
     utmStorageKey: "sadu_utm_params",
     exitIntentStorageKey: "sadu_exit_intent_shown",
+    currency: "VND",
+    productName: "Trung Ga Thao Duoc SADU",
+    productCategory: "Egg Landing Page",
   };
 
   /*====================================
   2. Utilities
   ====================================*/
   const select = (selector, scope = document) => scope.querySelector(selector);
+
+  const serializeCombo = (combo) => {
+    if (Array.isArray(combo)) return combo.join(" | ");
+    return combo || "";
+  };
 
   const throttle = (fn, delay) => {
     let isThrottled = false;
@@ -62,6 +70,14 @@ Thứ tự: Config → Utilities → Components → Events → Initialization
       window.ttq?.track(eventName, params);
     } catch (error) {
       console.error("Gửi tracking event thất bại:", error);
+    }
+  };
+
+  const trackMetaStandard = (eventName, params = {}) => {
+    try {
+      window.fbq?.("track", eventName, params);
+    } catch (error) {
+      console.error("Gui Meta standard event that bai:", error);
     }
   };
 
@@ -287,10 +303,34 @@ Thứ tự: Config → Utilities → Components → Events → Initialization
   const initFormTracking = () => {
     const form = select(SELECTORS.orderForm);
     if (!form) return;
+    let checkoutTracked = false;
+
+    const trackInitiateCheckout = () => {
+      if (checkoutTracked) return;
+      checkoutTracked = true;
+      trackEvent("initiate_checkout", {
+        content_name: CONFIG.productName,
+        content_category: CONFIG.productCategory,
+      });
+      trackMetaStandard("InitiateCheckout", {
+        content_name: CONFIG.productName,
+        content_category: CONFIG.productCategory,
+        currency: CONFIG.currency,
+      });
+    };
+
+    form.addEventListener("focusin", trackInitiateCheckout, { once: true });
 
     form.addEventListener("sadu:order-success", (event) => {
       const utm = readStoredUtmParams();
-      trackEvent("generate_lead", { ...utm, combo: event.detail?.combo ?? [] });
+      const combo = event.detail?.combo ?? [];
+      trackEvent("generate_lead", { ...utm, combo });
+      trackMetaStandard("Lead", {
+        content_name: CONFIG.productName,
+        content_category: CONFIG.productCategory,
+        currency: CONFIG.currency,
+        combo: serializeCombo(combo),
+      });
       window.setTimeout(() => {
         window.location.href = CONFIG.thankYouUrl;
       }, CONFIG.redirectDelayMs);
