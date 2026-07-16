@@ -185,6 +185,7 @@ main > section {
 
 .trust-bar__heading,
 .order-form__heading,
+.press__heading,
 .pain-point__heading,
 .solution__heading,
 .usp__heading,
@@ -576,6 +577,7 @@ main > section {
 
 .hero__image::after {
   content: none;
+  display: none;
 }
 
 .hero__image img {
@@ -757,6 +759,96 @@ main > section {
 .order-form__error {
   color: var(--color-danger);
   font-size: 0.9rem;
+}
+
+.press {
+  width: min(100%, var(--container));
+  margin-inline: auto;
+  text-align: center;
+}
+
+.press__heading {
+  max-width: 32ch;
+}
+
+.press__intro {
+  width: min(100%, 760px);
+  margin: 0 auto;
+  color: var(--color-text-muted);
+  font-size: 1.04rem;
+}
+
+.press__grid {
+  width: min(100%, var(--container));
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.press__card {
+  display: grid;
+  align-content: start;
+  justify-items: start;
+  gap: 14px;
+  padding: 24px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid var(--color-border);
+  border-radius: 30px;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.press__card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(var(--color-primary-rgb), 0.18);
+}
+
+.press__tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 8px 14px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(180deg, #fff7ef 0%, var(--color-sale-soft) 100%);
+  color: #87411e;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.press__title {
+  color: var(--color-text);
+  font-family: var(--font-family-display);
+  font-size: clamp(1.4rem, 1.8vw, 1.75rem);
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+}
+
+.press__text {
+  color: var(--color-text-muted);
+  font-size: 0.98rem;
+}
+
+.press__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  color: var(--color-sale);
+  font-weight: 800;
+}
+
+.press__link::after {
+  content: "->";
+  transition: transform var(--transition-fast);
+}
+
+.press__link:hover::after {
+  transform: translateX(4px);
 }
 
 .pain-point {
@@ -1610,6 +1702,7 @@ main > section.is-visible,
   }
 
   .trust-bar__list,
+  .press__grid,
   .commitment__list {
     grid-template-columns: 1fr 1fr;
   }
@@ -1626,36 +1719,28 @@ main > section.is-visible,
   }
 
   .header__nav {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: center;
     justify-content: space-between;
-    gap: 12px;
+    gap: 10px;
     padding: 14px;
   }
 
+  .header__logo {
+    min-width: 0;
+  }
+
+  .header__logo-text {
+    font-size: clamp(1.05rem, 4.6vw, 1.35rem);
+    min-height: auto;
+  }
+
   .header__menu {
-    order: 3;
-    width: 100%;
-    justify-content: flex-start;
-    gap: 18px;
-    overflow-x: auto;
-    padding: 2px 4px 6px;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .header__menu-item {
-    flex-shrink: 0;
-  }
-
-  .header__menu::-webkit-scrollbar {
-    height: 4px;
-  }
-
-  .header__menu::-webkit-scrollbar-thumb {
-    background: rgba(111, 135, 70, 0.18);
-    border-radius: 999px;
+    display: none;
   }
 
   .header__cta {
+    margin-left: auto;
     min-height: 48px;
     padding-inline: 20px;
   }
@@ -1666,6 +1751,7 @@ main > section.is-visible,
 
   .trust-bar__heading,
   .order-form__heading,
+  .press__heading,
   .pain-point__heading,
   .solution__heading,
   .usp__heading,
@@ -1735,6 +1821,15 @@ main > section.is-visible,
     border-radius: 22px;
   }
 
+  .press__grid,
+  .feedback__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .press__card {
+    padding: 22px;
+  }
+
   .hero__usp-title,
   .hero__offer-title {
     margin-bottom: 6px;
@@ -1766,10 +1861,8 @@ main > section.is-visible,
   }
 
   .hero__image::after {
-    left: 12%;
-    bottom: 8%;
-    width: 86px;
-    height: 86px;
+    content: none;
+    display: none;
   }
 
   .hero__image img {
@@ -1899,6 +1992,22 @@ main > section.is-visible,
 }
 
 @media (max-width: 480px) {
+  .header__nav {
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .header__logo-text {
+    font-size: clamp(0.96rem, 5vw, 1.14rem);
+    letter-spacing: 0.08em;
+  }
+
+  .header__cta {
+    min-height: 44px;
+    padding-inline: 16px;
+    font-size: 0.88rem;
+  }
+
   .hero {
     gap: 16px;
     padding-top: 4px;
@@ -1911,6 +2020,7 @@ main > section.is-visible,
 
   .trust-bar__heading,
   .order-form__heading,
+  .press__heading,
   .pain-point__heading,
   .solution__heading,
   .usp__heading,
